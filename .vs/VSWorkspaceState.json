@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\images"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\images\\GreenComputer.jpg",
   "PreviewInSolutionExplorer": false
 }
