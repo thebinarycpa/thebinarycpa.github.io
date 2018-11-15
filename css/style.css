@@ -1,8 +1,8 @@
 body {
     font-family: Bahnschrift;
     padding-top: 50px;
+    margin-right: 0px;
 }
-
 
 /*TODO: NEED TO LESSEN THE IMAGE QUALITY FOR FASTER LOAD TIMES*/
 .parallax {
@@ -15,7 +15,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 5px 5px 50px grey;
+    box-shadow: 15px 5px 50px grey;
 }
 
 .jumboText {
@@ -48,6 +48,15 @@ body {
     padding-top: 40px;
 }
 
+.portfolioHeader {
+    color: black;
+    text-shadow: 3px 3px 8px grey;
+}
+
+.portfolioLinks:hover {
+    text-decoration: none !important;
+}
+
 .portfolioItem {
     background-image: url("../images/folderDrawing.png");
     background-size: contain;
@@ -57,13 +66,62 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
+    margin-top: 5px;
 }
 
-.portfolioItem:hover {
+.portfolioItem:hover, .portfolioHeader:active {
     background-image: url("../images/folderDrawingOpen.png");
     cursor: pointer;
+    padding-top: 30px;
+    padding-left: 30px;
 
+}
+
+.mySectionHeaders{
+    text-shadow: 3px 3px 3px grey;
+}
+
+#contactBackground {
+    background-color: rgba(37, 83, 28, 0.32);
+    padding-bottom: 25px;
+    box-shadow: 5px -5px 50px grey;
+}
+
+#profilePic {
+    width: 100%;
+}
+
+.contactMeLinks {
+    color: #000000;
+    background-color: #b0b1f9;
+    border: solid 2px #0b099d;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.contactMeLinks:hover{
+    color: #fff;
+    background-color: #173ded;
+
+}
+
+.contactMeLinks:active {
+    color: #fff;
+    background-color: #0a1a7a;
+
+}
+
+#contactLinkHolder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contactPictureHolder{
+    text-align: center;
 }
 
 
@@ -74,5 +132,20 @@ body {
     }
     .jumbotron p {
         font-size: 2em;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .portfolioItem {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #profilePic {
+        width: 200px;
+    }
+    #contactLinkHolder {
+        align-items: center;
     }
 }

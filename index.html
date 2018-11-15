@@ -12,6 +12,7 @@
 </head>
 <body id="home">
     <!-- page content -->
+
     <!-- navigation -->
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +28,7 @@
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -44,9 +45,9 @@
     <!-- /jumbotron -->
 
     <!-- skills -->
-    <div class="container align-center websiteSection">
+    <div class="container align-center websiteSection" id="skills">
         <div class="row justify-content-center">
-            <h1>Skills</h1>
+            <h1 class="mySectionHeaders">Skills</h1>
         </div>
         <div class="row justify-content-center">
             <div class="card-group">
@@ -107,39 +108,61 @@
     <!-- portfolio -->
     <div class="container websiteSection" id="portfolio">
         <div class="row justify-content-center">
-            <h1>Portfolio</h1>
+            <h1 class="mySectionHeaders">Portfolio</h1>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4 portfolioItem">
-                <h4 class="portfolioHeader">Tech Acadmey Portfolio</h4>
+            <div class="col-md-4">
+                <a href="https://github.com/thebinarycpa/The-Tech-Academy-Basic-HTML-CSS-Projects" target="_blank" class="portfolioLinks">
+                    <div class="portfolioItem">
+                        <h4 class="portfolioHeader">Tech Acadmey Portfolio</h4>
+                    </div>
+                </a>
             </div>
-            <div class="col-md-4 portfolioItem">
-                <h4 class="portfolioHeader">My Personal Portfolio</h4>
+            <div class="col-md-4">
+                <a href="https://github.com/thebinarycpa/" target="_blank" class="portfolioLinks">
+                    <div class="portfolioItem">
+                        <h4 class="portfolioHeader">My Other Portfolios</h4>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- /portfolio -->
 
+    <!-- contact -->
+    <div class="websiteSection" id="contact">
+        <div id="contactBackground">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h1 class="mySectionHeaders">Contact Information</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4" id="contactPictureHolder">
+                        <img src="./images/profilePic.jpg" alt="Picture of me" id="profilePic" />
+                    </div>
+                    <div class="col-md-2 pt-3" id="contactLinkHolder">
+                        <a href="mailto:johnanthonylindsey@gmail.com" class="mb-2 contactMeLinks"><h4>Email</h4></a>
+                        <a href="https://www.linkedin.com/in/johnanthonylindsey/" class="mb-2 contactMeLinks"><h4>LinkedIn</h4></a>
+                        <a href="https://github.com/thebinarycpa" class="mb-2 contactMeLinks"><h4>GitHub</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /contact -->
+
     <!-- footer -->
-    <div class="container">
-        <ul class="nav nav-inline" id="deals">
+    <div>
+        <ul class="nav nav-inline">
             <li class="nav-item">
-                <small><a class="nav-link" href="#">Movie Rewards</a></small>
-            </li>
-            <li class="nav-item">
-                <small><a class="nav-link" href="#">Movies@news.org</a></small>
-            </li>
-            <li class="nav-item">
-                <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
-            </li>
-            <li class="nav-item">
-                <small class="nav-link">&copy;2017 Academy Cinemas&reg;</small>
+                <small class="nav-link">John Lindsey &copy;2018</small>
             </li>
         </ul>
     </div>
     <!-- /footer -->
 
     <!-- /page content -->
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
