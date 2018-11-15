@@ -1,0 +1,35 @@
+body {
+    font-family: Bahnschrift;
+    padding-top: 50px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/GreenComputer.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 50px grey;
+}
+
+.jumboText {
+    text-shadow: 5px 3px 5px #000;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .jumbotron h2 {
+        font-size: 3em;
+    }
+    .jumbotron p {
+        font-size: 2em;
+    }
+}
