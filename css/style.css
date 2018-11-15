@@ -3,6 +3,8 @@ body {
     padding-top: 50px;
 }
 
+
+/*TODO: NEED TO LESSEN THE IMAGE QUALITY FOR FASTER LOAD TIMES*/
 .parallax {
     /* The image used */
     background-image: url("../images/GreenComputer.jpg");
@@ -25,6 +27,47 @@ body {
     align-items: center;
 }
 
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+    color: #cdcdcd;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.img-fluid {
+    max-width: 150px;
+    width: 100%;
+}
+
+.websiteSection {
+    padding-top: 60px;
+}
+
+#azureBody {
+    padding-top: 40px;
+}
+
+.portfolioItem {
+    background-image: url("../images/folderDrawing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.portfolioItem:hover {
+    background-image: url("../images/folderDrawingOpen.png");
+    cursor: pointer;
+
+}
+
+
+/*Media Queries*/
 @media (max-width: 992px) {
     .jumbotron h2 {
         font-size: 3em;
