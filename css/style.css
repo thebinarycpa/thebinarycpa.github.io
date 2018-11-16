@@ -58,7 +58,7 @@ body {
 }
 
 .portfolioItem {
-    background-image: url("../images/folderDrawing.png");
+    background-image: url("../images/folderDrawingClosed.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -142,13 +142,13 @@ body {
     .portfolioItem {
         height: 150px;
     }
-    .portfolioHeader:hover {
+    .portfolioItem:hover .portfolioHeader {
         font-size: 100%;
     }
 }
 
 @media (min-width: 1119px) {
-    .portfolioHeader:hover {
+    .portfolioItem:hover .portfolioHeader {
         font-size: 100%;
     }
 }
