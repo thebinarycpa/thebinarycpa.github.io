@@ -115,7 +115,8 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://github.com/thebinarycpa/" target="_blank" class="portfolioLinks">
+                <!-- removed the href="https://github.com/thebinarycpa/" -->
+                <a href="#" target="_blank" class="portfolioLinks" data-toggle="modal" data-target="#OtherPortfolioModal">
                     <div class="portfolioItem">
                         <h4 class="portfolioHeader">My Other Portfolios</h4>
                     </div>
@@ -124,6 +125,26 @@
         </div>
     </div>
     <!-- /portfolio -->
+    <!-- modal -->
+    <div class="modal fade" id="OtherPortfolioModal" tabindex="-1" role="dialog" aria-labelledby="OtherPortfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="OtherPortfolioModalLabel">My Other Portfolios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    My other portfolios are currently private repositories in my GitHub account. If you would like to see them, please <a href="mailto:johnanthonylindsey@gmail.com">email me</a>.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal -->
     <!-- contact -->
     <div class="websiteSection" id="contact">
         <div id="contactBackground">
