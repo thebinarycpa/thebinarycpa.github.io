@@ -35,17 +35,17 @@ body {
     color: #fff;
 }
 
-.img-fluid {
-    max-width: 150px;
-    width: 100%;
-}
-
 .websiteSection {
     padding-top: 60px;
 }
 
-#azureBody {
-    padding-top: 40px;
+.card {
+    border-color: white;
+    padding: 20px;
+}
+
+#azurePhoto {
+    padding-top: 30px;
 }
 
 .portfolioHeader {
@@ -83,7 +83,7 @@ body {
 }
 
 #contactBackground {
-    background-color: rgba(37, 83, 28, 0.32);
+    background-color: rgba(178, 165, 82, 0.57);
     padding-bottom: 25px;
     box-shadow: 5px -5px 50px grey;
 }

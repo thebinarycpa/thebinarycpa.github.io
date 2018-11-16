@@ -12,7 +12,6 @@
 </head>
 <body id="home">
     <!-- page content -->
-
     <!-- navigation -->
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +33,6 @@
         </div>
     </nav>
     <!-- /navigation -->
-
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid text-center parallax">
         <div class="container">
@@ -43,68 +41,66 @@
         </div>
     </div>
     <!-- /jumbotron -->
-
     <!-- skills -->
     <div class="container align-center websiteSection" id="skills">
         <div class="row justify-content-center">
             <h1 class="mySectionHeaders">Skills</h1>
         </div>
         <div class="row justify-content-center">
-            <div class="card-group">
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/webDev.png" alt="HTML/CSS/JS logo image">
-                    <div class="card-body">
-                        <h5 class="card-title">Front End Web Development</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">HTML5, CSS3, JS5</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="container">
+                <div class="card-group">
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/webDev.png" alt="HTMl, CSS, and JS logos">
+                        <div class="card-body">
+                            <h4 class="card-title">Front End Web Development</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">HTML5, CSS3, JS5</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/MSNET_logo.png" alt=".NET logo image">
-                    <div class="card-body">
-                        <h5 class="card-title">MS .NET</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">C#, ASP.NET MVC, ADO.NET, LINQ</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/MSNET_logo.png" alt=".NET logo">
+                        <div class="card-body">
+                            <h4 class="card-title">MS .NET</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">C#, ASP.NET MVC, ADO.NET, LINQ</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/SQL_logo.png" alt="SQL logo image">
-                    <div class="card-body">
-                        <h5 class="card-title">SQL</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">SQL Server</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/SQL_logo.png" alt="SQL logo">
+                        <div class="card-body">
+                            <h4 class="card-title">SQL</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">SQL Server</h6>
+                        </div>
                     </div>
-                </div>
+                    <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/AZURE_logo.png" alt="Azure logo">
+                        <div class="card-body">
+                            <h4 class="card-title" id="azurePhoto">MS Azure</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Mobile Apps, Web Apps, Remote Databases, Active Directory</h6>
 
-                <!-- TODO: Need to find out how to get to break here once the screen is too small -->
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/GITFS_logo.png" alt="Git logo">
+                        <div class="card-body">
+                            <h4 class="card-title">Version Control</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Git Bash, GitHub</h6>
 
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/AZURE_logo.png" alt="SQL logo image">
-                    <div class="card-body" id="azureBody">
-                        <h5 class="card-title">MS Azure</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Mobile Apps, Web Apps, Remote Databases, Active Directory</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/GITFS_logo.png" alt="Git logo image">
-                    <div class="card-body">
-                        <h5 class="card-title">Version Control</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card col-md-2 border-0">
-                    <img class="card-img-top img-fluid d-block mx-auto" src="./images/EXCEL_logo.png" alt="Excel logo image">
-                    <div class="card-body">
-                        <h5 class="card-title">MS Excel</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid" src="./images/EXCEL_logo.png" alt="MS Excel logo">
+                        <div class="card-body">
+                            <h4 class="card-title">MS Excel</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">VBA, Advanced Formulas</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- /skills -->
-
     <!-- portfolio -->
     <div class="container websiteSection" id="portfolio">
         <div class="row justify-content-center">
@@ -128,7 +124,6 @@
         </div>
     </div>
     <!-- /portfolio -->
-
     <!-- contact -->
     <div class="websiteSection" id="contact">
         <div id="contactBackground">
@@ -150,7 +145,6 @@
         </div>
     </div>
     <!-- /contact -->
-
     <!-- footer -->
     <div>
         <ul class="nav nav-inline">
@@ -160,12 +154,11 @@
         </ul>
     </div>
     <!-- /footer -->
+    <!-- /page content -->    
 
-    <!-- /page content -->
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <!-- jQuery first, then Tether, then Bootstrap JS. -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
