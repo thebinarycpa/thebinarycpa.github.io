@@ -68,14 +68,17 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
+    padding: 0 5px;
 }
 
-.portfolioItem:hover, .portfolioHeader:active {
+/* Removed .portfolioHeader:active */
+.portfolioItem:hover {
     background-image: url("../images/folderDrawingOpen.png");
     cursor: pointer;
-    padding-top: 30px;
-    padding-left: 30px;
-
+    padding: 30px 50px 0 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mySectionHeaders{
@@ -138,6 +141,15 @@ body {
 @media (max-width: 992px) and (min-width: 768px) {
     .portfolioItem {
         height: 150px;
+    }
+    .portfolioHeader:hover {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1119px) {
+    .portfolioHeader:hover {
+        font-size: 100%;
     }
 }
 
