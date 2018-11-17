@@ -161,3 +161,12 @@ body {
         align-items: center;
     }
 }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .card-title {
+        font-size: 20px;
+    }
+    .card-subtitle {
+        font-size: 12px;
+    }
+}
