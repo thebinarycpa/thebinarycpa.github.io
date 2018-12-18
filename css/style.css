@@ -103,6 +103,7 @@ body {
     width: 120px;
     text-align: center;
     padding-top: 5px;
+    box-shadow: rgb(143, 143, 143) 3px 3px 3px;
 }
 
 .contactMeLinks:hover{
@@ -125,6 +126,75 @@ body {
 
 #contactPictureHolder{
     text-align: center;
+}
+
+.languages {
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.languages > li {
+    padding: 0 10px;
+    background-color: rgb(209, 209, 209);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: rgb(128, 128, 128) 3px 3px 3px;
+}
+
+.languages > li:hover {
+    background-color: rgb(105, 105, 105);
+}
+
+.languages > .selected {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.form-filter-title {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.blog-entries th {
+    text-decoration: underline;
+}
+
+.table {
+    border-collapse:separate;
+    border:solid black 3px;
+    border-radius:20px;
+    -moz-border-radius:20px;
+    border-spacing: 0;
+    box-shadow: rgb(114, 114, 114) 5px 5px 5px;
+}
+
+.table td, .table th {
+    border: none;
+}
+
+.like-button {
+    background-color: rgb(184, 203, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    border: 1px solid rgb(10, 44, 199);
+    cursor: pointer;
+    box-shadow: rgb(80, 80, 80) 2px 2px 2px;
+}
+
+.like-button:hover {
+    background-color: rgb(1, 60, 255);
+    color: white;
+}
+
+.disabled-like-button {
+    background-color: rgb(204, 204, 204);
+    border-color: #000;
+    pointer-events: none;  
 }
 
 
@@ -168,5 +238,11 @@ body {
     }
     .card-subtitle {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 374px) {
+    tr th:nth-child(1),tr td:nth-child(1) {
+        display:none;
     }
 }

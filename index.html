@@ -27,6 +27,9 @@
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -145,6 +148,37 @@
         </div>
     </div>
     <!-- /modal -->
+    <!-- blog -->
+    <div class="container websiteSection" id="blog">
+        <div class="row justify-content-center">
+            <h1 class="mySectionHeaders">Blog</h1>
+        </div>
+        <span class="form-filter-title">About</span>: 
+        <ul class="languages align-content-center" data-bind="foreach: languages">
+            <li data-bind="text: $data,
+               css: { selected: $data == $root.chosenLanguageId() },
+               click: $root.goToLanguage"></li>
+        </ul>
+        <table class="blog-entries table table-striped">
+            <thead>
+                <tr>
+                    <th>Posted</th>
+                    <th>Blog Post</th>
+                    <th>Likes</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: chosenLanguageData">
+                <tr>
+                    <td data-bind="text: moment(timeStamp).format('L')"></td>
+                    <td data-bind="text: blogText"></td>
+                    <td data-bind="text: likes()"></td>
+                    <td><span class="like-button" data-bind="click: $parent.liked, css: {'disabled-like-button': alreadyLiked()}">Like</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /blog -->
     <!-- contact -->
     <div class="websiteSection" id="contact">
         <div id="contactBackground">
@@ -177,9 +211,12 @@
     <!-- /footer -->
     <!-- /page content -->    
 
-            <!-- jQuery first, then Tether, then Bootstrap JS. -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/site.js"></script>
 </body>
 </html>
