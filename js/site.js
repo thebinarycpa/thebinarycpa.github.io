@@ -19,7 +19,7 @@ var BlogVm = function() {
     // Behaviors
     self.goToLanguage = function(language) {
         self.chosenLanguageId(language);
-        $.getJSON('https://thebinarycpa.github.io/', {language: language}, function(response) {
+        $.getJSON('https://githubaccountapithebincpa.azurewebsites.net/api/blogentries', {language: language}, function(response) {
             var mappedEntries = $.map(response, function(item) {return new Entry(item)});
             self.chosenLanguageData(mappedEntries);
         });
@@ -28,7 +28,7 @@ var BlogVm = function() {
     self.liked = function(entry) { 
         entry.likes(entry.likes() + 1);
         entry.alreadyLiked(true);
-        $.ajax("https://thebinarycpa.github.io/", {
+        $.ajax("https://githubaccountapithebincpa.azurewebsites.net/api/blogentries", {
             data: ko.toJSON({BlogEntryId: entry.blogEntryId, TimeStamp: entry.timeStamp, Language: entry.language, BlogText: entry.blogText, Likes: entry.likes()}),
             type: "post", contentType: "application/json",
             success: function(result) { alert('Thanks for liking my post!') }
