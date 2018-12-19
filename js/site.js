@@ -43,9 +43,9 @@ ko.applyBindings(new BlogVm());
 
 // Informing the user that the dat is loading
 $(document).ajaxStart(function() {
-    $('#loading').show();
+    $('.loading').show();
     $('.table-data').hide();
   }).ajaxStop(function() {
-    $('#loading').hide();
+    $('.loading').hide();
     $('.table-data').show();
   });
