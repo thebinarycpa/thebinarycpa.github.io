@@ -170,13 +170,13 @@
             </thead>
             <tbody data-bind="foreach: chosenLanguageData">
                 <tr>
-                    <td data-bind="text: moment(timeStamp).format('L')"></td>
-                    <td data-bind="text: blogText"></td>
-                    <td data-bind="text: likes()"></td>
-                    <td><span class="like-button" data-bind="click: $parent.liked, css: {'disabled-like-button': alreadyLiked()}">Like</span></td>
+                    <td id="loading">Loading...</td>
+                    <td class="table-data" data-bind="text: moment(timeStamp).format('L')"></td>
+                    <td class="table-data" data-bind="text: blogText"></td>
+                    <td class="table-data" data-bind="text: likes()"></td>
+                    <td class="table-data"><span class="like-button" data-bind="click: $parent.liked, css: {'disabled-like-button': alreadyLiked()}">Like</span></td>
                 </tr>
             </tbody>
-            <div id="loading">Loading...</div>
         </table>
     </div>
     <!-- /blog -->
