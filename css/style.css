@@ -197,6 +197,11 @@ body {
     pointer-events: none;  
 }
 
+#loading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
 /*Media Queries*/
 @media (max-width: 992px) {

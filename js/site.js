@@ -41,11 +41,11 @@ var BlogVm = function() {
 ko.applyBindings(new BlogVm());
 
 
-// Informing the user that the dat is loading
+// Informing the user that the data is loading
 $(document).ajaxStart(function() {
-    $('.loading').show();
-    $('.table-data').hide();
+    $('#loading').show();
+    $('.blog-entries').hide();
   }).ajaxStop(function() {
-    $('.loading').hide();
-    $('.table-data').show();
+    $('#loading').hide();
+    $('.blog-entries').show();
   });

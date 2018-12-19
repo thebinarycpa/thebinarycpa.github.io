@@ -170,7 +170,6 @@
             </thead>
             <tbody data-bind="foreach: chosenLanguageData">
                 <tr>
-                    <td class="loading">Loading...</td>
                     <td class="table-data" data-bind="text: moment(timeStamp).format('L')"></td>
                     <td class="table-data" data-bind="text: blogText"></td>
                     <td class="table-data" data-bind="text: likes()"></td>
@@ -178,6 +177,7 @@
                 </tr>
             </tbody>
         </table>
+        <div id="loading">Loading...</div>
     </div>
     <!-- /blog -->
     <!-- contact -->
